@@ -16,11 +16,13 @@ elif randomno == 3:
     comp = 'G'
     print("Computer Selected Gun")
 
-p2 =  input("Player's Turn Snake(1) Water(2) Gun(3) ?")
+p2 =  input("Player's Turn Snake(S) Water(W) Gun(G) ?")
 
 
-if(comp != p2):
+if(comp == "S" and p2 == "G" or comp == 'S' and p2 == "W"):
     print("Player Win")
-else:
+elif(comp == "W" and p2 == "G" or comp == 'W' and p2 == "S"):
     print("Computer Win")
+else:
+    print("Game Ties")
 
