@@ -19,9 +19,9 @@ elif randomno == 3:
 p2 =  input("Player's Turn Snake(S) Water(W) Gun(G) ?")
 
 
-if(comp == "S" and p2 == "G" or comp == 'S' and p2 == "W"):
+if(comp == "S" and p2 == "G" or comp == 'S' and p2 == "W" or  comp == 'G' and p2 == "W"):
     print("Player Win")
-elif(comp == "W" and p2 == "G" or comp == 'W' and p2 == "S"):
+elif(comp == "W" and p2 == "G" or comp == 'S' and p2 == "W" or  comp == 'G' and p2 == "S"):
     print("Computer Win")
 else:
     print("Game Ties")
